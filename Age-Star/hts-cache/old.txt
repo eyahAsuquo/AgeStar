@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+21:14:17	0/0	---M--	301	error ('Moved%20Permanently')	text/html	date:Sat,%2020%20Apr%202024%2020:14:08%20GMT	https://www.agestar.ng/	C:/My%20Web%20Sites/Age-Star/www.agestar.ng/index.html	(from )
+21:14:17	0/0	---M--	301	error ('Moved%20Permanently')	text/html	date:Sat,%2020%20Apr%202024%2020:14:08%20GMT	https://www.agestar.ng/robots.txt		(from )

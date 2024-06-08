@@ -1,0 +1,363 @@
+/*
+Theme Name: Ziptech
+Theme URI: https://shtheme.com/demosd/ziptech
+Author: Shtheme
+Author URI: https://themeforest.net/user/shtheme
+Description: Ziptech is perfect theme for different category websites like it solutions, technology, software, it services, technology service, agency, consulting, startup, shipping, technology company, network solution etc and many more.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: ziptech
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ========TABLE OF CONTENTS==========
+00. Body, links, hgroup, paragraphs, general styles
+01. Fixed header & Navigation
+02. Section Intro (Home)
+03. Section About
+04. Section Resume
+05. Section Portfolio
+06. Section Blog
+07. Section Contact
+08. Footer
+09. Loader
+10. Responsive design
+
+/*--------------------------------------------------
+    00. Body, links, hgroup, paragraphs, general styles
+---------------------------------------------------*/
+
+
+
+.elementor-editor-active .owl-carousel {
+  display: block;
+}
+
+
+.js.elementor-html .animate-box {
+    opacity: 1!important;
+}
+
+.news-bottom-part .post-author span {
+    text-transform: capitalize;
+}
+.tagcloud .wp-tag-cloud li a {
+    background: #fff;
+    color: var(--body-font-color);
+    font-size: 14px !important;
+    margin-right: 10px;
+    margin-top: 14px;
+    padding: 5px 16px 5px 16px;
+    display: inline-block;
+}
+.tagcloud .wp-tag-cloud li a:hover {
+    color: #fff;
+    background: var(--webex-primary-color);
+}
+.news-sidebar-widget .tagcloud ul li {
+    display: inline;
+}
+.widget.sidebar-widget.widget-widget_categories ul li:before {
+    content: "\f0da";
+    vertical-align: middle;
+    margin-right: 10px;
+    color: var(--body-font-color);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--webex-primary-color);
+}
+.widget.sidebar-widget.widget-widget_categories ul li a {
+    color: var(--body-font-color);
+}
+.widget.sidebar-widget.widget-widget_categories ul li, .widget.sidebar-widget.widget-widget_categories ul li {
+    display: inherit;
+    padding: 5px 0;
+}
+.news-sidebar-widget .widget-widget_categories ul li a:hover, .news-sidebar-widget .widget-widget_categories ul li a:hover {
+    color: var(--webex-primary-color);
+}
+.comment-respond h3.comment-reply-title{
+    margin-bottom: 40px;
+}
+p.comment-form-cookies-consent {
+    display: none;
+}
+.pagination-nav .pagination-list>li>span {
+    color: #565151;
+    font-weight: 500;
+    height: 54px;
+    width: 54px;
+    line-height: 54px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 15px;
+}
+.pagination-nav .pagination-list>li>span.page-numbers.current {
+    color: #565151;
+    font-weight: 500;
+    height: 54px;
+    width: 54px;
+    line-height: 54px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    background: var(--webex-primary-color);
+    color: #fff;
+}
+form.wpcf7-form p {
+    margin: 0 0 0px;
+}
+.theme-btn-6::before {
+    background: var(--gradient-color1);
+}
+input.theme-btn-6:hover{
+    background: var(--gradient-color1);
+}
+.wpcf7 div.mdl-js input[type="email"]{
+    text-align: right;
+}
+.contact-form .form-group .animate-btn-style3:hover {
+    background: var(--gradient-color1);
+}
+.search .search-custom {
+    background: #fff;
+}
+.search .search-custom {
+    background: #fff;
+}
+.search .search-custom h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.search .search-custom form {
+    display: flex;
+}
+.search .search-custom form .s-input-home {
+    width: 70%;
+    height: 45px;
+    padding-left: 10px;
+    max-width: 100%;
+    border: 1px solid #999;
+    padding: 0px 10px 0px;
+    margin-bottom: 0px;
+}
+.search .search-custom form .btn-s-input {
+    background: var(--webex-primary-color);
+    color: #fff;
+    border: 1px solid var(--webex-primary-color);
+    padding: 8px 20px 5px 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.search .search-custom form .btn-s-input:hover {
+    background-color: var(--webex-primary-color2);
+    border: 1px solid var(--webex-primary-color2);
+}
+.search .search-custom {
+    background: var(--bg-silver);
+    padding: 40px;
+}
+.search .search-custom form .s-input-home {
+    background: #FFF;
+    font-size: 15px;
+}
+@media screen and (min-width: 991px){
+.search .search-custom {
+    margin-right: 40px;
+}
+}
+.sidebar-widget.widget-search {
+    padding: 40px;
+}
+.footer-widget .wpcf7-not-valid-tip {
+    color: #fff;
+    margin-top: 20px;
+    position: absolute;
+}
+.footer-widget .wpcf7 form .wpcf7-response-output {
+    margin: 2em 0em 1em;
+    margin-top: 65px;
+    color: #fff;
+}
+.form-group .wpcf7-not-valid-tip {
+    margin-top: 20px;
+    color: var(--body-font-color);
+}
+.wpcf7 form .wpcf7-response-output {
+    margin: 2em 0em 1em;
+}
+ .wpcf7 div[dir="rtl"]+.wpcf7-response-output {
+    direction: rtl;
+}
+.blog .news-description h4.the-title {
+    margin-bottom: 20px;
+}
+.news-wrapper-style1 .news-description .news-bottom-part .post-author span a {
+    color: var(--heading-font-color);
+}
+.team-item [class^="base-icon-"],.team-item [class*=" base-icon-"] {
+    line-height: inherit;
+}
+.news-wrapper-style2 .news-description .news-bottom-part .post-author span a {
+    color: var(--heading-font-color);
+}
+.page-template-home-dark-layout6 .service-style3 .service-inner {
+    background: var(--bg-white);
+}
+.page-template-home-dark-layout6 [data-overlay-dark="6"]:before{
+    opacity: 0.95;
+}
+.order-list li {
+    text-transform: capitalize;
+}
+.news-wrapper-style1 .news-description .news-bottom-part .post-link {
+    color: var(--body-font-color);
+}
+.news-wrapper-style2 .news-description .news-bottom-part .post-link {
+    color: var(--body-font-color);
+}
+.blog-single-news .single-news-details .single-news-content .news-description .news-bottom-part .post-link>a {
+    color: var(--body-font-color);
+}
+.block-quote p {
+    text-transform: capitalize;
+}
+.blog-single-news .single-news-details .single-news-content .comments-area .comment-list .comment .comment-body .comment-content .comment-meta .comment-metadata span {
+    color: var(--body-font-color);
+}
+.widget-widget_block.widget_search label.wp-block-search__label {
+    display: none;
+}
+.widget-widget_block .wp-block-search .wp-block-search__inside-wrapper {
+    position: relative;
+}
+.widget-widget_block .wp-block-search .wp-block-search__input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background: #fff;
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+.widget-widget_block .wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    color: var(--body-font-color);
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.widget-widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts__list.wp-block-latest-posts li {
+    margin-bottom: 20px;
+    color: var(--body-font-color);
+    font-size: 16px;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+.widget-widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts__list.wp-block-latest-posts li a{
+    color: var(--body-font-color);
+}
+.widget-widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts__list.wp-block-latest-posts li:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px dashed #cccccc;
+}
+.widget-widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-comments .wp-block-latest-comments__comment {
+    color: var(--body-font-color);
+    font-size: 16px;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+.widget-widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-comments .wp-block-latest-comments__comment footer a{
+    color: var(--body-font-color);
+}
+.widget-widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-comments .wp-block-latest-comments__comment:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px dashed #cccccc;
+}
+.sidebar_widget.widget.widget-widget_block.widget_search .wp-block-search__button-outside .wp-block-search__inside-wrapper {
+    margin: 0px 0px;
+}
+.news-sidebar-widget .wp-block-group__inner-container .wp-block-categories-list li {
+    display: inherit;
+    padding: 5px 0;
+}
+.news-sidebar-widget .wp-block-group__inner-container .wp-block-categories-list li a{
+    color: var(--body-font-color);
+}
+.news-sidebar-widget .wp-block-group__inner-container .wp-block-categories-list li:before {
+    content: "\f0da";
+    vertical-align: middle;
+    margin-right: 10px;
+    color: var(--body-font-color);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--webex-primary-color);
+}
+.news-sidebar-widget .wp-block-group__inner-container .wp-block-archives-list li {
+    display: inherit;
+    padding: 5px 0;
+}
+.news-sidebar-widget .wp-block-group__inner-container .wp-block-archives-list li a{
+    color: var(--body-font-color);
+}
+.news-sidebar-widget .wp-block-group__inner-container .wp-block-archives-list li:before {
+    content: "\f0da";
+    vertical-align: middle;
+    margin-right: 10px;
+    color: var(--body-font-color);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--webex-primary-color);
+}
+.wp-block-group__inner-container .wp-block-latest-comments {
+    padding-left: 0rem;
+}
+.wp-block-group .wp-block-group__inner-container h2 {
+        font-size: 22px;
+    line-height: 1.2;
+    position: relative;
+    padding: 5px 5px 5px 30px;
+    margin-bottom: 20px;
+    font-weight: var(--h3-h4-font-weight);
+}
+.wp-block-group .wp-block-group__inner-container h2:after {
+        content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    left: 0;
+    top: 0;
+    background: var(--webex-primary-color);
+}
+.elementor-edit-area-active .home_banner_01 .home-carousel .slide-item .auto-container .content-box .home-carousel-title {
+    opacity: 1;
+}
+.elementor-edit-area-active .home_banner_01 .home-carousel .slide-item .auto-container .content-box .home-carousel-text {
+    opacity: 1;
+}
+.elementor-edit-area-active .team-section .owl-carousel .team-style1 {
+    max-width: 370px;
+    float: left;
+    margin-right:30px;
+}
